@@ -104,6 +104,7 @@
                 width: 350px;
                 height: 250px;
                 background-color: black;
+                display: inline-block;
                 margin: 30px 50px;
                 background-image: url(./pic.webp);
                 background-size: cover;
@@ -125,7 +126,7 @@
                 
                 transition:all;
                 transition-duration: 0.2s;
-                transition-timing-function:;  
+               
                 
             }
             .child42{
@@ -137,12 +138,8 @@
                 right: -30px ;
                 transition:all;
                 transition-duration: 0.2s;
-                transition-timing-function:;  
-                opacity: 0;
-                
-
-                
-                       
+               
+                opacity: 0;  
 
             }
 
@@ -157,11 +154,34 @@
             .parent4:hover .child42{
                 right: 0px;
                 opacity: 1;
-               
-
-                
                 
             }
+
+            .parent5{
+              width: 350px;
+                height: 250px;
+                background-color: black;  
+                display: inline-block;
+                position: absolute;
+                background-image: url(./pic.webp); 
+                background-size: cover;
+                margin:30px 0px;
+                
+            }
+            .child5{
+                width: 350px;
+                height: 250px;
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0;     
+                transition: all;
+                transition-duration: 0.5s;
+                transition-timing-function: ease-in;
+            }
+
+            .parent5:hover .child5{
+                opacity: 1;
+            }
+
                     
                     
            
@@ -203,6 +223,12 @@
             <div class="child42">
 
             </div>
+        </div>
+
+
+
+        <div class="parent5">
+            <div class="child5"></div>
         </div>
         
     </body>

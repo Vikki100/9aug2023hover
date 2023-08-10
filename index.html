@@ -1,235 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> hover effects</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover effects</title>
 
-        <style>
-            h2{
-              
-                margin:20px;
-                text-align: center;
-            }
-            .parent{
-                width: 350px;
-                height: 250px;
-                background: #000;
-                background-image: url(./pic.webp);
-                background-size: cover;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) ;
-                position: relative;
-                overflow: hidden;
-                display: inline-block;
-                margin-left: 50px;
-            }
+    <style>
+      h2 {
+        margin: 20px;
+        text-align: center;
+      }
+      .parent {
+        width: 350px;
+        height: 250px;
+        background: #000;
+        background-image: url(./pic.webp);
+        background-size: cover;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        margin-left: 50px;
+      }
 
-            .child{
-                width: 350px;
-                height: 250px;
-                background-color: rgba(0, 0, 0, 0.4);
-                position: absolute;
-                top: -250px;
-                transition-property: all;
-                transition-duration: 0.4s;
-                transition-timing-function: ease-in-out;
-                
-            }
+      .child {
+        width: 350px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: -250px;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+      }
 
-            .parent:hover .child{
-                top: 0px;
-            }
+      .parent:hover .child {
+        top: 0px;
+      }
 
-            .parent2{
-                width: 350px;
-                height: 250px;
-                background: #000;
-                background-image: url(./pic.webp);
-                background-size: cover;
-                display: inline-block;
-                margin-left: 40px;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-                position: relative;
-                overflow: hidden;
+      .parent2 {
+        width: 350px;
+        height: 250px;
+        background: #000;
+        background-image: url(./pic.webp);
+        background-size: cover;
+        display: inline-block;
+        margin-left: 40px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
 
-                .child2{
-                    width: 350px;
-                    height: 250px;
-                    background-color: rgba(0, 0, 0, 0.4);
-                    position: absolute;
-                    left: -350px;
-                    transition-property: all;
-                    transition-duration: 0.4s;
-                    transition-timing-function: linear;
-                }
-                    
-                    
-            }
-            .parent2:hover .child2{
-                left: 0px;
-                
-            }
+        .child2 {
+          width: 350px;
+          height: 250px;
+          background-color: rgba(0, 0, 0, 0.4);
+          position: absolute;
+          left: -350px;
+          transition-property: all;
+          transition-duration: 0.4s;
+          transition-timing-function: linear;
+        }
+      }
+      .parent2:hover .child2 {
+        left: 0px;
+      }
 
-            .parent3{
-                width: 350px;
-                height: 250px;
-                background: #000;
-                background-image: url(./pic.webp);
-                background-size: cover;
-                display: inline-block;
-                margin-left: 40px;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-                position: relative;
-                overflow: hidden;
+      .parent3 {
+        width: 350px;
+        height: 250px;
+        background: #000;
+        background-image: url(./pic.webp);
+        background-size: cover;
+        display: inline-block;
+        margin-left: 40px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
 
-                .child3{
-                    width: 350px;
-                    height: 250px;
-                    background-color: rgba(0, 0, 0, 0.4);
-                    position: absolute;
-                    bottom:-250px ;
-                    transition-property: all;
-                    transition-duration: 0.4s;
-                    transition-timing-function: linear;
-                }
-                    
-                    
-            }
-            .parent3:hover .child3{
-                bottom: 0px;
-                
-            }
+        .child3 {
+          width: 350px;
+          height: 250px;
+          background-color: rgba(0, 0, 0, 0.4);
+          position: absolute;
+          bottom: -250px;
+          transition-property: all;
+          transition-duration: 0.4s;
+          transition-timing-function: linear;
+        }
+      }
+      .parent3:hover .child3 {
+        bottom: 0px;
+      }
 
-            .parent4{
-                width: 350px;
-                height: 250px;
-                background-color: black;
-                display: inline-block;
-                margin: 30px 50px;
-                background-image: url(./pic.webp);
-                background-size: cover;
-                position: relative;
-                overflow: hidden;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      .parent4 {
+        width: 350px;
+        height: 250px;
+        background-color: black;
+        display: inline-block;
+        margin: 30px 50px;
+        background-image: url(./pic.webp);
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      }
 
-                
-            }
-           
-            .child41{
-                width: 175px;
-                height: 250px;
-                background:rgba(0, 0, 0, 0.4);
-                display: inline-block;
-                position: absolute;
-                left: -30px;
-                opacity: 0;
-                
-                transition:all;
-                transition-duration: 0.2s;
-               
-                
-            }
-            .child42{
-                width: 175px;
-                height: 250px;
-                background:rgba(0,0,0, 0.4);
-                position: absolute;
-                display: inline-block;
-                right: -30px ;
-                transition:all;
-                transition-duration: 0.2s;
-               
-                opacity: 0;  
+      .child41 {
+        width: 175px;
+        height: 250px;
+        background: rgba(0, 0, 0, 0.4);
+        display: inline-block;
+        position: absolute;
+        left: -30px;
+        opacity: 0;
 
-            }
+        transition: all;
+        transition-duration: 0.2s;
+      }
+      .child42 {
+        width: 175px;
+        height: 250px;
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        display: inline-block;
+        right: -30px;
+        transition: all;
+        transition-duration: 0.2s;
 
-            .parent4:hover .child41{
-                left: 0px;
-                opacity: 1;
-             
-               
-            }
-                    
+        opacity: 0;
+      }
 
-            .parent4:hover .child42{
-                right: 0px;
-                opacity: 1;
-                
-            }
+      .parent4:hover .child41 {
+        left: 0px;
+        opacity: 1;
+      }
 
-            .parent5{
-              width: 350px;
-                height: 250px;
-                background-color: black;  
-                display: inline-block;
-                position: absolute;
-                background-image: url(./pic.webp); 
-                background-size: cover;
-                margin:30px 0px;
-                
-            }
-            .child5{
-                width: 350px;
-                height: 250px;
-                background-color: rgba(0, 0, 0, 0.5);
-                opacity: 0;     
-                transition: all;
-                transition-duration: 0.5s;
-                transition-timing-function: ease-in;
-            }
+      .parent4:hover .child42 {
+        right: 0px;
+        opacity: 1;
+      }
 
-            .parent5:hover .child5{
-                opacity: 1;
-            }
+      .parent5 {
+        width: 350px;
+        height: 250px;
+        background-color: black;
+        display: inline-block;
+        position: absolute;
+        background-image: url(./pic.webp);
+        background-size: cover;
+        margin: 30px 0px;
+        overflow: hidden;
+      }
+      .child5 {
+        width: 350px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: inline-block;
 
-                    
-                    
-           
+        opacity: 0;
+        transition: all;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in;
+      }
+      .child5 > p {
+        text-align: center;
+        line-height: 250px;
+        color: #dfff;
+      }
 
+      .parent5:hover .child5 {
+        opacity: 1;
+        transform: scale(2, 2);
+      }
 
-           
-        </style>
+      .parent6 {
+        width: 350px;
+        height: 250px;
+        background-color: black;
+        display: inline-block;
 
+        position: absolute;
+        background-image: url(./pic.webp);
+        background-size: cover;
+        right: 65px;
+        margin: 30px 0px;
+        overflow: hidden;
+      }
+      .child6 {
+        width: 350px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s ease;
 
+        transform-origin: top 0px;
+        transform-origin: right 0px;
+        transform: rotate(90deg);
+      }
+      .child6 > p {
+        text-align: center;
+        line-height: 250px;
+        color: #dfff;
+      }
 
-    </head>
-    <body>
+      .parent6:hover .child6 {
+        opacity: 1;
+        transform: rotate(0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Hover Effects</h2>
 
-        <h2>Hover Effects </h2>
-       
-        <div class="parent">
-            <div class="child">
+    <div class="parent">
+      <div class="child"></div>
+    </div>
 
-            </div>
-        </div>
+    <div class="parent2">
+      <div class="child2"></div>
+    </div>
 
-        <div class="parent2">
-            <div class="child2">
+    <div class="parent3">
+      <div class="child3"></div>
+    </div>
 
-            </div>
-        </div>
+    <div class="parent4">
+      <div class="child41"></div>
+      <div class="child42"></div>
+    </div>
 
-        <div class="parent3">
-            <div class="child3">
+    <div class="parent5">
+      <div class="child5"><p>Hover</p></div>
+    </div>
 
-            </div>
-        </div>
-
-
-        <div class="parent4">
-            <div class="child41">
-
-            </div>
-            <div class="child42">
-
-            </div>
-        </div>
-
-
-
-        <div class="parent5">
-            <div class="child5"></div>
-        </div>
-        
-    </body>
+    <div class="parent6">
+      <div class="child6"><p>Hover</p></div>
+    </div>
+  </body>
 </html>
